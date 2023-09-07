@@ -21,7 +21,10 @@ void setup()
 void draw()
 {
   background(0);
+  
   rect(rectPosX, rectPosY, rectWidth, rectHeight);
-  circle(mouseX, mouseY, circleRad);
   line(width/2, 0, width/2, height);
+  
+  circle(mouseX, mouseY, circleRad);
+  circle(width - mouseX, mouseY, circleRad);
 };
